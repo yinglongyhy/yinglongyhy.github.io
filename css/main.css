@@ -1,0 +1,99 @@
+.sideBar, .main {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+.sideBar {
+    float: left;
+    width: 20%;
+    position: fixed;
+
+}
+
+.main {
+    float: right;
+    width: 50%;
+    margin-right: 15%;
+    padding: 30px;
+}
+
+.sideBar .logo {
+    font-size: 200%;
+    border: 20px solid #000;
+    padding: 40px;
+    margin: 20px;
+}
+
+header {
+    font: bold;
+    font-size: 40px;
+
+}
+
+.sideBar > * {
+    text-align: center;
+    padding: 20px;
+}
+
+.saying {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.myInformation .item,
+.jump .item {
+    font-size: 30px;
+    padding: 25px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(233, 233, 233, 0.5));
+    color: #666666;
+}
+
+.myInformation .item:hover,
+.jump .item:hover {
+    color: antiquewhite;
+}
+
+.main h1,
+.baidu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.book .bookImage {
+    width: 40%;
+    display: inline-block;
+}
+
+.book > .article {
+    float: right;
+    width: 50%;
+    display: inline-block;
+}
+
+.main > * {
+    margin: 30px;
+}
+
+.main .article {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.main .book .bookImage .article {
+    text-align: center;
+}
+
+.feeling .article,
+.feeling .image {
+    display: inline-block;
+    width: 50%;
+}
+
+.feeling .article {
+    float: right;
+}
