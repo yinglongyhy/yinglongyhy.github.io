@@ -187,7 +187,7 @@ yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 4. 测试启动
 
-   > 运行`sslocal -c /etc/shadowsocls/ipv4.json start`
+   > 运行`ssserver -c /etc/shadowsocks/ipv4.json start`
    >
    > 如没报错说明成功
 
@@ -197,7 +197,7 @@ yum --enablerepo=elrepo-kernel install kernel-ml -y
    >
    > 在`touch /var/lock/subsys/local`这一行上面添加
    >
-   > `ssservice -c /etc/shadowsocks/ipv4.json -d start`
+   > `ssserver -c /etc/shadowsocks/ipv4.json -d start`
    >
    > 保存退出
    >
@@ -205,8 +205,8 @@ yum --enablerepo=elrepo-kernel install kernel-ml -y
    >
    > ```shell
    > # 假如/etc/shadowsocks目录下有两个配置文件，一个ipv4，一个ipv6
-   > ssservice -c /etc/shadowsocks/ipv4.json -d start --pid-file ss1.pid
-   > ssservice -c /etc/shadowsocks/ipv6.json -d start --pid-file ss2.pid
+   > ssserver -c /etc/shadowsocks/ipv4.json -d start --pid-file ss1.pid
+   > ssserver -c /etc/shadowsocks/ipv6.json -d start --pid-file ss2.pid
    > ```
 
 ## 参考
